@@ -13,7 +13,8 @@ class Song
   def self.create
     # @name = name 
     new_song = self.new 
-    @@all << self 
+    @@all << self
+    new_song.save
     new_song
   end
   
